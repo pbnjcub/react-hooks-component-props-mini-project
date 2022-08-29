@@ -1,0 +1,9 @@
+import React from "react"
+
+function PropImg(props) {
+    return (
+        <img src={props.image} alt="blog Image" />
+    )
+}
+
+export default PropImg
