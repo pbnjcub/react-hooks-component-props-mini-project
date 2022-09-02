@@ -1,6 +1,6 @@
 import React from "react";
 
-function RenderHeader(props) {
+function Header(props) {
     return (
         <header>
             <h1>{props.name}</h1>
@@ -8,4 +8,4 @@ function RenderHeader(props) {
     )
 }
 
-export default RenderHeader;
+export default Header;

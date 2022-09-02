@@ -1,15 +1,16 @@
 import React from "react"
-import PropImg from "./PropImg"
-import DefaultImg from "./DefaultImg"
+// import PropImg from "./PropImg.js"
+// import DefaultImg from "./DefaultImg"
 
-
-
-function RenderAbout(props) {
+function About(props) {
+    const isImg = props.image
     return (
         <aside>
-            {props.image ? <PropImg src={props.image}/> : <DefaultImg />}
+            {isImg ? <img src={props.image} alt="blog logo" /> : <img src="https://via.placeholder.com/215" alt="blog logo"/>}
+            <p>{props.about}</p>
         </aside>
+        
     )
 }
 
-export default RenderAbout
+export default About
