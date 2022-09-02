@@ -1,14 +1,16 @@
 import React from "react";
 import blogData from "../data/blog";
-import RenderHeader from "./Header"
-import RenderAbout from "./About"
+import Header from "./Header"
+import About from "./About"
+import ArticleList from "./ArticleList"
 
-console.log(blogData.image);
+console.log(blogData);
 function App() {
   return (
     <div className="App">
-      <RenderHeader name={blogData.name}/>
-      <RenderAbout alt="image" src={blogData.image}/>
+      <Header name={blogData.name}/>
+      <About src={blogData.image} about={blogData.about} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
